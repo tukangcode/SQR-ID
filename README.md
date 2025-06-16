@@ -1,104 +1,92 @@
-# SQR-ID
-Shoppe Quick Spending Report maker (title subject to change),  
-# (Beta) Shopee Financial Spending Report Maker 
+# Shopee Financial Tracker
 
-A Tampermonkey userscript to automate extraction and export of Shopee order history into CSV and Markdown reports. Useful for personal finance tracking, expense summaries, and data analysis of Shopee orders.
+A powerful browser extension to track and analyze your Shopee purchases with detailed financial reporting.
 
-🔗 **[Bahasa Indonesia Di Bawah](#-bahasa-indonesia)**
+## Features
 
-# Shopee Order Scraper Tampermonkey Script
+- 📊 **Comprehensive Financial Tracking**
+  - Track product subtotals
+  - Monitor shipping costs
+  - Record shipping discounts
+  - Track Shopee vouchers
+  - Monitor service fees
+  - Calculate total order amounts
 
-## 📦 Files
+- 🎨 **Modern UI/UX**
+  - Clean and intuitive interface
+  - Dark/Light mode support
+  - Draggable and resizable window
+  - Real-time status updates
+  - Beautiful notifications
 
-- *Userscript (coming soon stable version):** [Download sqrbeta.js](#) <!-- TODO: Replace # with actual link -->
-- **Video Tutorial:** Coming Soon!
+- 📈 **Advanced Export Options**
+  - CSV export with Excel optimization
+  - Markdown export for documentation
+  - Proper currency formatting
+  - Organized data structure
 
-## 📝 Table of Contents
+- 🔄 **Smart Features**
+  - Automatic order link extraction
+  - Duplicate detection and removal
+  - Smart retry mechanism
+  - Popup handling
+  - CAPTCHA detection
 
-1. [Features](#-features)
-2. [Usage Instructions](#-usage-instructions)
-3. [Notes](#-notes)
-4. [Disclaimer](#-disclaimer)
-5. [🇮🇩 Baca Versi Bahasa Indonesia](#-bahasa-indonesia)
+## Installation
 
-## 🚀 Features
+1. Install a userscript manager:
+   - [Tampermonkey](https://www.tampermonkey.net/) (Recommended)
+   - [Violentmonkey](https://violentmonkey.github.io/)
+   - [Greasemonkey](https://www.greasespot.net/)
 
-- Extract Shopee order data
-- Export to Markdown or CSV
-- Simple UI buttons
-- Optional data cleaning
-- Adjustable scraping delay
+2. Click the "Raw" button on the script page to install
 
-## 🎯 Usage Instructions
+## Usage
 
-1. **Install Tampermonkey Extension** in your browser.
-2. To install this userscript, either:  
-   - Click the `sqrbeta.js` file and then click **"Download Raw"** — Tampermonkey will show an installation prompt automatically.  
-   - Or, manually create a **New Script** in Tampermonkey, copy the code from `sqrbeta.js`, paste into the Tampermonkey script editor, and save.
-3. Open **Shopee Order Page** (`https://shopee.co.id/user/purchase/order`).
-4. Make sure you **scroll down** to fully load the order history content (especially "Completed" orders) as needed. Then click **Extract Links**.
-5. Once links are extracted, click **Start** and let the script run.  
-   **Tips:** Play low-volume music/video to prevent your computer from sleeping during scraping.  
-   You can also adjust the **delay mechanism** by editing the delay values directly in the script file (`setTimeout`).
-6. When done, export your data as **Markdown or CSV**.
-7. (Optional) Click **Clean** to clear all collected data from the table.
+1. **Enable Popups**
+   - Chrome: 🔐 (Site Info) > Site Settings > Allow Popups
+   - Firefox: ⓘ (Site Info) > Permissions > Allow Popups
 
-## 📝 Notes
+2. **Extract Order Links**
+   - Go to "My Orders" page
+   - Click [🔗 Extract Order Links] to capture visible order URLs
 
-- Only works on Shopee Indonesia (`shopee.co.id`).
-- Shopee website structure may change; script may break if Shopee updates its DOM.
-- For large order history, scraping might take several minutes.
+3. **Remove Duplicates**
+   - Click [🔍 Remove Duplicates] to clean up duplicated links
 
-## ⚠️ Disclaimer
+4. **Start Tracking**
+   - Click [▶️ Start] to begin extracting order details
+   - Wait for the process to complete
 
-This script is for personal use. Use responsibly.  
-We are not affiliated with Shopee in any way.
+5. **Export Results**
+   - [📊 Export CSV] for spreadsheet analysis
+   - [📝 Export Markdown] for documentation
 
----
+## UI Controls
 
-# 🇮🇩 Bahasa Indonesia
+- Press `Ctrl+M` to toggle UI visibility
+- Click 🌙/☀️ to toggle dark/light mode
+- Drag the header to move the window
+- Resize using the bottom-right corner
 
-## 📦 File
+## Tips
 
-- **Userscript:** [Unduh sqrbeta.js](#) <!-- TODO: Replace # with actual link -->
-- **Video Tutorial:** Segera Hadir!
+- Process 1-3 orders at a time to avoid detection
+- Keep the tab active during processing
+- Solve CAPTCHA manually if prompted
+- CSV export uses semicolons (;) for better Excel compatibility
+- Dark mode preference is saved between sessions
 
-## 📝 Daftar Isi
+## Support
 
-1. [Fitur](#-fitur)
-2. [Cara Pakai](#-cara-pakai)
-3. [Catatan](#-catatan)
-4. [Disclaimer](#-disclaimer-1)
+For issues, suggestions, or contributions:
+- Create an issue on GitHub
+- Contact the developer directly
 
-## 🚀 Fitur
+## Credits
 
-- Ekstrak data pesanan Shopee
-- Ekspor ke format Markdown atau CSV
-- Tombol UI sederhana
-- Fitur pembersihan data opsional
-- Mekanisme delay yang dapat diatur
+Developed by [Ryu-Sena](https://github.com/tukangcode) | IndoTech Community
 
-## 🎯 Cara Pakai
+## License
 
-1. **Pasang ekstensi Tampermonkey** di browser Anda.
-2. Untuk memasang userscript ini, ada dua cara:  
-   - Klik file `sqrbeta.js` lalu klik **"Download Raw"**, maka akan muncul prompt instalasi otomatis dari Tampermonkey.  
-   - Atau buat **New Script** di Tampermonkey, salin seluruh kode dari `sqrbeta.js`, tempel ke editor script Tampermonkey, lalu simpan.
-3. Buka **halaman pesanan Shopee** (`https://shopee.co.id/user/purchase/order`).
-4. Pastikan Anda **scroll ke bawah** hingga seluruh riwayat pesanan (terutama yang sudah selesai) tampil di halaman. Setelah itu, klik **Extract Links**.
-5. Setelah link berhasil diekstrak, klik **Start** dan biarkan script berjalan otomatis.  
-   **Tips:** Putar musik MP3 atau video bersuara kecil untuk mencegah komputer masuk mode sleep saat proses scraping.  
-   Anda juga bisa mengatur **delay mekanisme** dengan mengedit nilai delay langsung di dalam file script (`setTimeout`).
-6. Setelah selesai, ekspor data Anda ke format **Markdown atau CSV**.
-7. (Opsional) Klik **Clean** untuk membersihkan semua data dari tabel.
-
-## 📝 Catatan
-
-- Hanya berfungsi di Shopee Indonesia (`shopee.co.id`).
-- Jika Shopee mengubah struktur website, script ini mungkin tidak berfungsi.
-- Untuk riwayat pesanan yang besar, proses scraping bisa memakan waktu beberapa menit.
-
-## ⚠️ Disclaimer
-
-Script ini hanya untuk penggunaan pribadi. Gunakan dengan bijak.  
-Kami tidak berafiliasi dengan Shopee dalam bentuk apapun.
+This project is licensed under the MIT License - see the LICENSE file for details.
